@@ -1,4 +1,28 @@
-(function() {
+<script type="text/javascript">
+      window.ymConfig = {"bot":"x1704718036718","host":"https://cloud.yellow.ai"};
+    (function() {
+        var w = window,
+            ic = w.YellowMessenger;
+        if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+        else {
+            var d = document,
+                i = function() {
+                    i.c(arguments)
+                };
+            function l() {
+                var e = d.createElement("script");
+                e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+                var t = d.getElementsByTagName("script")[0];
+                t.parentNode.insertBefore(e, t)
+            }
+            i.q = [], i.c = function(e) {
+                i.q.push(e)
+            }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}
+    })();
+</script>
+
+<script type="text/javascript">
+    (function() {
         console.log("inside custom script");
         window.addEventListener("message", function(event1) {
             try {
@@ -51,7 +75,7 @@
                             element.style.margin = "-10";  // Center horizontally by setting auto left and right margins
                             element.style.display = "block";  // Change display to block to apply margin auto correctly
                             element.style.padding = "10px"; 
-                            element.setAttribute("src", "https://cdn.yellowmessenger.com/EKlfmd43lEHa1716282500198.png");
+                            element.setAttribute("src", "https://cdn.yellowmessenger.com/VeGn3etUHRqE1724848729259.png");
                             if (x.length > 0) {
                                 // Remove existing title element if present
                                 const existingTitle = x[0].querySelector('.icon1');
@@ -71,3 +95,4 @@
             }
         }, false);
     })();
+</script>
